@@ -1,0 +1,166 @@
+body {
+    background-color: #2B1B12;
+    color: #F5E9D3;
+    font-family: 'Georgia', serif;
+}
+
+.hero {
+    background: linear-gradient(
+        rgba(43,27,18,0.85),
+        rgba(43,27,18,0.85)
+    ),
+    url('/images/pattern.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 120px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    color: #C9A14A;
+    letter-spacing: 4px;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    margin-top: 20px;
+}
+
+.btn-chic {
+    background-color: #C9A14A;
+    color: #2B1B12;
+    padding: 14px 40px;
+    font-weight: bold;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.section {
+    padding: 80px 0;
+}
+
+.section-title {
+    color: #C9A14A;
+    text-align: center;
+    margin-bottom: 50px;
+    letter-spacing: 3px;
+}
+
+.info-box {
+    background-color: rgba(255,255,255,0.05);
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+}
+.fade-up {
+    animation: fadeUp 1.2s ease forwards;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .section {
+        padding: 50px 20px;
+    }
+
+    .btn-chic {
+        width: 100%;
+    }
+}
+.card-chic img {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card-chic img:hover {
+    transform: scale(1.07);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+/* TITRES DES QUESTIONS */
+.section-title {
+    font-size: 2.4rem; /* AVANT trop petit */
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    color: #fff;
+}
+
+/* TEXTE DES PARAGRAPHES */
+.card-chic p,
+.text-muted {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+/* BOUTONS */
+.btn {
+    font-size: 1.1rem;
+    padding: 14px 30px;
+    border-radius: 50px;
+}
+
+/* BOUTON PRINCIPAL */
+.btn-chic {
+    background: linear-gradient(135deg, #c8a24a, #f5d77a);
+    color: #000;
+    font-weight: 600;
+    border: none;
+}
+
+/* BOUTON SECONDAIRE */
+.btn-outline-light {
+    border-width: 2px;
+    font-weight: 600;
+}
+
+/* INPUT NOM / PRENOM */
+.form-control {
+    font-size: 1.15rem;
+    padding: 14px;
+    border-radius: 12px;
+}
+
+/* MOBILE FIRST */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .btn {
+        font-size: 1.05rem;
+        padding: 12px 24px;
+    }
+
+    .card-chic p {
+        font-size: 1.05rem;
+    }
+}
+/* STEP = plein écran */
+.step {
+    display: none;
+    min-height: 100vh;
+    width: 100%;
+}
+
+/* STEP ACTIF = centrage parfait */
+.step.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeUp 0.8s ease;
+}

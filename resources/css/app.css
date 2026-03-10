@@ -1,0 +1,188 @@
+body {
+    background-color: #2B1B12;
+    color: #F5E9D3;
+    font-family: 'Georgia', serif;
+}
+
+/* HERO */
+
+.hero {
+    background: linear-gradient(
+        rgba(43,27,18,0.85),
+        rgba(43,27,18,0.85)
+    ),
+    url('/images/pattern.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 120px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: clamp(2.8rem, 6vw, 4rem);
+    color: #C9A14A;
+    letter-spacing: 4px;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+/* BOUTON */
+
+.btn-chic {
+    background-color: #C9A14A;
+    color: #2B1B12;
+    padding: 14px 40px;
+    font-weight: bold;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+}
+
+/* SECTIONS */
+
+.section {
+    padding: 80px 0;
+}
+
+.section-title {
+    color: #C9A14A;
+    text-align: center;
+    margin-bottom: 50px;
+    letter-spacing: 3px;
+    font-size: 2.4rem;
+}
+
+.info-box {
+    background-color: rgba(255,255,255,0.05);
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+/* CENTRAGE PARFAIT DES STEPS */
+
+.step {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.step.active {
+    display: flex;
+}
+
+/* MOBILE */
+
+@media (max-width:768px){
+
+.hero h1{
+    font-size: 3rem;
+}
+
+.hero p{
+    font-size: 1.4rem;
+}
+
+.section-title{
+    font-size: 2rem;
+}
+
+.info-box{
+    font-size: 1.25rem;
+}
+
+.btn-chic{
+    font-size: 1.2rem;
+    padding: 14px 26px;
+}
+
+#countdown{
+    font-size: 1.5rem;
+}
+
+}
+
+/* FOOTER */
+
+.site-footer{
+    background-color: white;
+    text-align: center;
+    padding: 35px 20px;
+    margin-top: 80px;
+}
+
+/* TEXTE FOOTER */
+
+.designer-text{
+    color: #2B1B12;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+/* ICONES */
+
+.social-links{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-links a{
+    font-size: 1.9rem;
+    color: #2B1B12;
+    transition: 0.3s;
+}
+
+.social-links a:hover{
+    transform: scale(1.2);
+}
+/* ANIMATION APPARITION */
+
+.fade-up{
+opacity:0;
+transform:translateY(40px);
+animation:fadeUp 1.2s ease forwards;
+}
+
+@keyframes fadeUp{
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+.carousel-item img{
+transition: transform 6s ease;
+}
+
+.carousel-item.active img{
+transform: scale(1.1);
+}
+.countdown{
+display:flex;
+justify-content:center;
+gap:30px;
+margin-top:30px;
+}
+
+.countdown div{
+background:rgba(255,255,255,0.05);
+padding:20px 25px;
+border-radius:15px;
+font-size:1.8rem;
+min-width:90px;
+}
+
+.countdown small{
+display:block;
+font-size:0.8rem;
+opacity:0.7;
+margin-top:5px;
+}
